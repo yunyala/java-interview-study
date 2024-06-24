@@ -13,7 +13,7 @@ public class SingletonLazyDemo {
         System.out.println("单例模式-懒汉模式构造器执行私有构造方法");
     }
 
-    public static SingletonLazyDemo getInstance() {
+    public synchronized static SingletonLazyDemo getInstance() {
         if (singletonLazyDemo==null) {
             singletonLazyDemo = new SingletonLazyDemo();
         }
