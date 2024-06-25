@@ -1,4 +1,4 @@
-package com.yunya.designpattern.proxyPattern.dynamicProxy;
+package com.yunya.designpattern.proxyPattern.dynamicProxy.cglibDynamicProxy;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.yunya.designpattern.proxyPattern.dynamicProxy;
+package com.yunya.designpattern.proxyPattern.dynamicProxy.jdkDynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
