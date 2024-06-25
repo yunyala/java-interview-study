@@ -1,7 +1,8 @@
-package com.yunya.designpattern.demo;
+package com.yunya.designpattern.singletonPattern;
 
 /**
- * @Description 单例模式-懒汉模式
+ * 单例模式：保证一个类只有一个实例，并且提供一个访问该全局访问点
+ * @Description 单例模式-懒汉模式：类初始化时,不会初始化该对象,真正需要使用的时候才会创建该对象,具备懒加载功能。
  * @Author yunyala
  * @Date 2024/6/24 23:52
  */
