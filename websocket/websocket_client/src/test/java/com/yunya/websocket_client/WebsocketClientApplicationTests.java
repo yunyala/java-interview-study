@@ -1,10 +1,10 @@
-package com.yunya.javainterviewstudy;
+package com.yunya.websocket_client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaInterviewStudyApplicationTests {
+class WebsocketClientApplicationTests {
 
     @Test
     void contextLoads() {

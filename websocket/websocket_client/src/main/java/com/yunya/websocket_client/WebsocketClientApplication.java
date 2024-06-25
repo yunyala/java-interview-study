@@ -1,13 +1,13 @@
-package com.yunya.javainterviewstudy;
+package com.yunya.websocket_client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JavaInterviewStudyApplication {
+public class WebsocketClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JavaInterviewStudyApplication.class, args);
+        SpringApplication.run(WebsocketClientApplication.class, args);
     }
 
 }
