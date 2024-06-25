@@ -1,4 +1,4 @@
-package com.yunya.javainterviewstudy.designPattern;
+package com.yunya.designpattern.demo;
 
 /**
  * @Description 单例模式-懒汉模式
