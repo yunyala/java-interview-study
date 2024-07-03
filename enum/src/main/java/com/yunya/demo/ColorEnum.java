@@ -5,5 +5,7 @@ public enum ColorEnum {
     GREEN,
     BLUE;
 
+    ColorEnum() {}
+
 }
 
