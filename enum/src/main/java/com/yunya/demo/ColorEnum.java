@@ -5,7 +5,9 @@ public enum ColorEnum {
     GREEN,
     BLUE;
 
-    ColorEnum() {}
+    ColorEnum() {
+        System.out.println("ColorEnum");
+    }
 
 }
 

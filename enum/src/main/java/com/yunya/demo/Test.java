@@ -11,6 +11,7 @@ public class Test {
 
     public static void main(String[] args) {
         System.out.println(ColorEnum.RED);
+        System.out.println(ColorEnum.GREEN);
         System.out.println("================");
 
         System.out.println(WeekEnum.MONDAY.getName());
