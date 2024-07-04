@@ -26,10 +26,15 @@
         </dependency>
 
         <!-- springBoot redisson redis支持 -->
+<!--        <dependency>-->
+<!--            <groupId>org.redisson</groupId>-->
+<!--            <artifactId>redisson-spring-boot-starter</artifactId>-->
+<!--            <version>3.26.0</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.redisson</groupId>
-            <artifactId>redisson-spring-boot-starter</artifactId>
-            <version>3.26.0</version>
+            <artifactId>redisson</artifactId>
+            <version>3.17.5</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
