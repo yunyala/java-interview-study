@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class ThreadPoolExecutorDemo {
     private static final int CORE_POOL_SIZE = 2;
     private static final int MAX_POOL_SIZE = 5;
-    private static final int QUEUE_CAPACITY = 1;
+    private static final int QUEUE_CAPACITY = 20;
     private static final long KEEP_ALIVE_TIME = 1L;
 
     public static void main(String[] args) {
