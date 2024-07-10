@@ -12,7 +12,7 @@ public class MyRunnable implements Runnable{
         System.out.println(Thread.currentThread().getName() + "正在执行任务-" + taskId);
         // 模拟执行任务时间
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
