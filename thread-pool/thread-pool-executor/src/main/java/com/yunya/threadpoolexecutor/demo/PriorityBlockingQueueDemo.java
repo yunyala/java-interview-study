@@ -17,15 +17,15 @@ public class PriorityBlockingQueueDemo {
                 new PriorityBlockingQueue<>()
         );
         // 方案1.1：引用内部任务类MyRunnable
-        for (int i=0; i<10; i++) {
-            final int taskId = i;
-            final int priority = i % 3; // 模拟不同的任务优先级
-            threadPoolExecutor.execute(new MyRunnable(taskId, priority));
-        }
+//        for (int i=0; i<10; i++) {
+//            final int taskId = i;
+//            final int priority = i % 3; // 模拟不同的任务优先级
+//            threadPoolExecutor.execute(new MyRunnable(taskId, priority));
+//        }
         // 方案1.2：引用内部任务类MyRunnable
-//        threadPoolExecutor.execute(new MyRunnable(1, 1));
-//        threadPoolExecutor.execute(new MyRunnable(2, 10));
-//        threadPoolExecutor.execute(new MyRunnable(3, 3));
+        threadPoolExecutor.execute(new MyRunnable(1, 1));
+        threadPoolExecutor.execute(new MyRunnable(2, 10));
+        threadPoolExecutor.execute(new MyRunnable(3, 3));
 
         // 方案二：引用外部任务类MyComparableRunnable
 //        threadPoolExecutor.execute(new MyComparableRunnable(1, 1));
@@ -53,6 +53,8 @@ public class PriorityBlockingQueueDemo {
         public int compareTo(MyRunnable other) {
             // 根据优先级比较任务，优先级高的排在前面
             return Integer.compare(other.priority, this.priority);
+            // 根据优先级比较任务，优先级低的排在前面
+//            return Integer.compare(this.priority, other.priority);
         }
     }
 }
