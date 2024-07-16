@@ -9,6 +9,8 @@ public class Dog {
 
     private int age;
 
+    public String type;
+
     public Dog() {
     }
 
