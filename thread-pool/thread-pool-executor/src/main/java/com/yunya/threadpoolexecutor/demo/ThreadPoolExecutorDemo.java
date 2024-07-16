@@ -30,7 +30,10 @@ public class ThreadPoolExecutorDemo {
         for (int i = 1; i <= 20; i++) {
             // 创建任务
             MyRunnable myRunnable = new MyRunnable("" + i);
-            // 执行任务
+            // 执行任务：ThreadPoolExecutor 提供了两种方法来提交任务给线程池执行：submit() 和 execute() 方法。
+            // 返回值类型：submit() 返回一个 Future 对象，可以用于获取任务执行结果或者异常信息；execute() 是 void，没有返回值。
+            // 异常处理：submit() 方法能够捕获任务执行过程中的异常并封装在 Future 中，而 execute() 方法无法直接捕获任务执行中的异常。
+            // 适用场景：如果需要获取任务执行的结果或者处理任务执行过程中的异常，应使用 submit() 方法；如果只是执行简单的任务，不需要关心返回值或者异常处理，可以使用 execute() 方法。
             threadPoolExecutor.execute(myRunnable);
         }
 
