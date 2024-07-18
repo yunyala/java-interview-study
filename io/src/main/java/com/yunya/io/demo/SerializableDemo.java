@@ -36,18 +36,19 @@ public class SerializableDemo implements Serializable {
         SerializableDemo sd = new SerializableDemo("张三", 20);
         System.out.println("序列化前：" + sd);
 
-        // 将对象进行序列化
+        // 将对象进行序列化：使用 ObjectOutputStream 将对象写入到文件或者其他输出流中。
         FileOutputStream fileOutputStream = new FileOutputStream("sd.txt");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(sd);
         objectOutputStream.close();
         System.out.println("序列化完成");
 
-        // 反序列化：把序列化后的字符串转为对象
+        // 反序列化：把序列化后的字符串转为对象。
+        // 使用 ObjectInputStream 从文件或者其他输入流中读取对象的字节表示，并将其转换为原始对象。
         FileInputStream fileInputStream = new FileInputStream("sd.txt");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         SerializableDemo serializableDemo = (SerializableDemo) objectInputStream.readObject();
+        objectInputStream.close();
         System.out.println("反序列化：" + serializableDemo);
-
     }
 }
