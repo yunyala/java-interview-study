@@ -1,6 +1,6 @@
 package com.yunya.javagenerics;
 
-public class Box<T> {
+public class GenericClassTest<T> {
    
   private T t;
  
@@ -13,8 +13,8 @@ public class Box<T> {
   }
  
   public static void main(String[] args) {
-    Box<Integer> integerBox = new Box<Integer>();
-    Box<String> stringBox = new Box<>();
+    GenericClassTest<Integer> integerBox = new GenericClassTest<Integer>();
+    GenericClassTest<String> stringBox = new GenericClassTest<>();
  
     integerBox.add(new Integer(10));
     stringBox.add(new String("菜鸟教程"));
